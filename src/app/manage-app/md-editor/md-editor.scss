@@ -1,0 +1,23 @@
+.md-editor {
+  .panel {
+    padding-left: 1rem;
+  }
+  .editor-panel {
+    .md-preview-panel, .md-editor-panel {
+      height: 600px;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.dropdown-menu {
+  background-color: #4acaa8;
+  li {
+    a {
+      color: white;
+      &:hover {
+        color: #4acaa8;
+      }
+    }
+  }
+}

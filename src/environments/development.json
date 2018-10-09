@@ -1,0 +1,6 @@
+{
+  "baseUrl": "/",
+  "api": {
+    "host": "http://www.baidu.com/api"
+  }
+}

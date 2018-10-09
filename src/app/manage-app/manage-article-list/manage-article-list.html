@@ -1,0 +1,13 @@
+<section class="article-list">
+  <div class="article-header row">
+    <article-search (searchArticle)="searchArticle($event)"></article-search>
+  </div>
+
+  <div class="article-body">
+    <manage-article-item *ngFor="let articleItem of article?.result; let $index = index" [articleItem]="articleItem"
+                  (deleteArticle)="deleteArticle($index)"></manage-article-item>
+    <pager [pageIndex]="article?.pageIndex" [pageSize]="article?.pageSize" [total]="article?.total"
+           (pageChange)="pageChange($event)"></pager>
+  </div>
+</section>
+
